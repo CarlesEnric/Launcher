@@ -1,0 +1,44 @@
+:root {
+  --bg: #ffffff;
+  --text: #111111;
+  --accent: #0066cc;
+  --high-contrast-bg: #000000;
+  --high-contrast-text: #ffffff;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  margin: 0;
+  padding: 1rem;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.app-root {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.apps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px;
+}
+
+.accessible-button {
+  background: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 18px 12px;
+  font-size: 20px;
+  min-height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.accessible-button:focus {
+  outline: 3px solid #ffd54f;
+}
