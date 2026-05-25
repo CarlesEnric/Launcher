@@ -1,0 +1,29 @@
+# VCS and editor noise
+.git/
+.vscode/
+.idea/
+.DS_Store
+
+# Generated files
+**/__pycache__/
+**/*.py[cod]
+**/.pytest_cache/
+**/.mypy_cache/
+**/.ruff_cache/
+**/node_modules/
+**/dist/
+**/.vite/
+
+# Environment files
+.env
+.env.*
+
+# Local development certificates
+certs/
+
+# Docs are not needed in container build contexts
+*.md
+!README.md
+
+# Logs
+*.log
